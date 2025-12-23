@@ -7,7 +7,7 @@ export default defineConfig({
   integrations: [react(), tailwind()],
   // Performance optimizations
   build: {
-    inlineStylesheets: 'auto', // Inline small stylesheets for faster loading
+    inlineStylesheets: 'always', // Always inline CSS to prevent render blocking
   },
   vite: {
     build: {
