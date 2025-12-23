@@ -1,4 +1,11 @@
 ---
+import { Image } from 'astro:assets';
+import review1Image from '../assets/images/review1.webp';
+import reviewphoto1Image from '../assets/images/reviewphoto1.webp';
+import review2Image from '../assets/images/review2.webp';
+import reviewphoto2Image from '../assets/images/reviewphoto2.webp';
+import review3Image from '../assets/images/review3.webp';
+import reviewphoto3Image from '../assets/images/reviewphoto3.webp';
 ---
 
 <section class="bg-sp-dark-gray text-white py-16 testimonials-section">
@@ -14,13 +21,13 @@
               <!-- Slide 1: Review -->
               <div class="carousel-slide active">
                 <div class="carousel-image-wrapper">
-                  <img src="/images/review1.webp" alt="Customer review" class="carousel-image" loading="lazy" width="400" height="400" />
+                  <Image src={review1Image} alt="Customer review" class="carousel-image" width={400} height={400} loading="lazy" />
                 </div>
               </div>
               <!-- Slide 2: After Image -->
               <div class="carousel-slide">
                 <div class="carousel-image-wrapper">
-                  <img src="/images/reviewphoto1.webp" alt="Home after siding installation" class="carousel-image" loading="lazy" width="400" height="400" />
+                  <Image src={reviewphoto1Image} alt="Home after siding installation" class="carousel-image" width={400} height={400} loading="lazy" />
                 </div>
               </div>
             </div>
@@ -42,13 +49,13 @@
               <!-- Slide 1: Review -->
               <div class="carousel-slide active">
                 <div class="carousel-image-wrapper">
-                  <img src="/images/review2.webp" alt="Customer review" class="carousel-image" loading="lazy" width="400" height="400" />
+                  <Image src={review2Image} alt="Customer review" class="carousel-image" width={400} height={400} loading="lazy" />
                 </div>
               </div>
               <!-- Slide 2: After Image -->
               <div class="carousel-slide">
                 <div class="carousel-image-wrapper">
-                  <img src="/images/reviewphoto2.webp" alt="Home after siding installation" class="carousel-image" loading="lazy" width="400" height="400" />
+                  <Image src={reviewphoto2Image} alt="Home after siding installation" class="carousel-image" width={400} height={400} loading="lazy" />
                 </div>
               </div>
             </div>
@@ -70,13 +77,13 @@
               <!-- Slide 1: Review -->
               <div class="carousel-slide active">
                 <div class="carousel-image-wrapper">
-                  <img src="/images/review3.webp" alt="Customer review" class="carousel-image" loading="lazy" width="400" height="400" />
+                  <Image src={review3Image} alt="Customer review" class="carousel-image" width={400} height={400} loading="lazy" />
                 </div>
               </div>
               <!-- Slide 2: After Image -->
               <div class="carousel-slide">
                 <div class="carousel-image-wrapper">
-                  <img src="/images/reviewphoto3.webp" alt="Home after siding installation" class="carousel-image" loading="lazy" width="400" height="400" />
+                  <Image src={reviewphoto3Image} alt="Home after siding installation" class="carousel-image" width={400} height={400} loading="lazy" />
                 </div>
               </div>
             </div>

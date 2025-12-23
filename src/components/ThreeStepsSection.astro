@@ -1,4 +1,8 @@
 ---
+import { Image } from 'astro:assets';
+import thermalImage from '../assets/images/thermalanlysis.webp';
+import sidingCheckImage from '../assets/images/sidingcheck.webp';
+import sidingAfterImage from '../assets/images/sidingafter.webp';
 ---
 
 <section class="bg-white three-steps-section">
@@ -17,7 +21,7 @@
               </h3>
               <p class="text-gray-700 three-steps-description" style="font-family: 'Montserrat', sans-serif;">FLIR imaging to find heat-loss pathways*.</p>
               <div class="bg-gray-200 rounded-lg overflow-hidden three-steps-image">
-                <img src="/images/thermalanlysis.webp" alt="Thermal analysis" class="w-full h-full object-cover" loading="lazy" width="341" height="341" />
+                <Image src={thermalImage} alt="Thermal analysis" class="w-full h-full object-cover" width={341} height={341} loading="lazy" />
               </div>
             </div>
           </div>
@@ -31,7 +35,7 @@
               </h3>
               <p class="text-gray-700 three-steps-description" style="font-family: 'Montserrat', sans-serif;">Visual inspection with photos included.</p>
               <div class="bg-gray-200 rounded-lg overflow-hidden three-steps-image">
-                <img src="/images/sidingcheck.webp" alt="Siding condition check" class="w-full h-full object-cover" loading="lazy" width="341" height="341" />
+                <Image src={sidingCheckImage} alt="Siding condition check" class="w-full h-full object-cover" width={341} height={341} loading="lazy" />
               </div>
             </div>
           </div>
@@ -45,7 +49,7 @@
               </h3>
               <p class="text-gray-700 three-steps-description" style="font-family: 'Montserrat', sans-serif;">No-hassle, no-obligation proposal.</p>
               <div class="bg-gray-200 rounded-lg overflow-hidden three-steps-image">
-                <img src="/images/sidingafter.webp" alt="Siding after installation" class="w-full h-full object-cover" loading="lazy" width="341" height="341" />
+                <Image src={sidingAfterImage} alt="Siding after installation" class="w-full h-full object-cover" width={341} height={341} loading="lazy" />
               </div>
             </div>
           </div>
