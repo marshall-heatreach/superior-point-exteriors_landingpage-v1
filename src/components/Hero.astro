@@ -39,27 +39,14 @@
       </div>
     </div>
     
-    <!-- Formsort Embedded Form -->
+    <!-- Growform Embedded Form -->
     <div class="container mx-auto px-4 hero-form-container">
       <div class="max-w-2xl mx-auto">
-        <div class="bg-white rounded-lg p-6 md:p-8 shadow-lg">
-          <div id="formsort"></div>
-        </div>
+        <!-- Growform Snippet -->
+        <script type="text/javascript" src="https://embed.growform.co/client/69457054e5f4f67ea247dd87"></script>
+        <!-- End Growform Snippet -->
       </div>
     </div>
-    
-    <!-- Load Formsort flow -->
-    <script>
-      // Wait for Formsort to be ready, then load the flow
-      if (window._formsort && window._formsort.load) {
-        window._formsort.load({c:'heatreachrpe',f:'appointment-request',v:'main',o:{parentEl:'#formsort'}});
-      } else {
-        // If Formsort isn't ready yet, wait for it
-        window._formsort = window._formsort || {};
-        window._formsort.q = window._formsort.q || [];
-        window._formsort.q.push(['load', {c:'heatreachrpe',f:'appointment-request',v:'main',o:{parentEl:'#formsort'}}]);
-      }
-    </script>
   </div>
 </section>
 
