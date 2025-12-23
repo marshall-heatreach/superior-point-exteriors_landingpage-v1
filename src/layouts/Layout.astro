@@ -18,14 +18,15 @@ const { title = "Superior Point Exteriors - Free Winter Siding Health Check" } =
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://embed.growform.co" />
+    <link rel="dns-prefetch" href="https://embed.growform.co" />
     <link rel="preconnect" href="https://images.leadconnectorhq.com" />
     <link rel="dns-prefetch" href="https://assets.cdn.filesafe.space" />
     
-    <!-- Load Google Fonts asynchronously to prevent render blocking -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'; this.onload=null;" />
-    <noscript>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
-    </noscript>
+    <!-- Preload Growform script for fastest form loading (highest priority) -->
+    <link rel="preload" href="https://embed.growform.co/client/69457054e5f4f67ea247dd87" as="script" fetchpriority="high" />
+    
+    <!-- Optimized font loading with font-display: swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
