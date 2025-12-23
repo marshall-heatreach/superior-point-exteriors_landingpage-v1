@@ -1,44 +1,361 @@
 ---
 ---
 
-<section class="bg-sp-dark-gray text-white py-16">
+<section class="bg-sp-dark-gray text-white py-16 testimonials-section">
   <div class="container mx-auto px-4">
-    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">What Twin Cities Homeowners Say</h2>
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12" style="font-family: 'Montserrat', sans-serif;">What Twin Cities Homeowners Say</h2>
     
     <div class="max-w-6xl mx-auto">
-      <!-- Image Carousel -->
-      <div class="relative">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
-          <!-- House 1: Dark blue siding -->
-          <div class="bg-gray-300 rounded-lg overflow-hidden aspect-video">
-            <div class="w-full h-full bg-gradient-to-br from-blue-800 via-blue-700 to-blue-600 flex items-center justify-center">
-              <div class="text-white text-sm">Dark Blue Siding</div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <!-- Carousel 1 -->
+        <div class="testimonial-carousel">
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <!-- Slide 1: Review -->
+              <div class="carousel-slide active">
+                <div class="carousel-image-wrapper">
+                  <img src="/images/review1.webp" alt="Customer review" class="carousel-image" />
+                </div>
+              </div>
+              <!-- Slide 2: After Image -->
+              <div class="carousel-slide">
+                <div class="carousel-image-wrapper">
+                  <img src="/images/reviewphoto1.webp" alt="Home after siding installation" class="carousel-image" />
+                </div>
+              </div>
             </div>
-          </div>
-          
-          <!-- House 2: Light brown/tan siding -->
-          <div class="bg-gray-300 rounded-lg overflow-hidden aspect-video">
-            <div class="w-full h-full bg-gradient-to-br from-amber-200 via-amber-300 to-amber-400 flex items-center justify-center">
-              <div class="text-gray-800 text-sm">Tan Siding</div>
-            </div>
-          </div>
-          
-          <!-- House 3: White siding -->
-          <div class="bg-gray-300 rounded-lg overflow-hidden aspect-video">
-            <div class="w-full h-full bg-gradient-to-br from-gray-100 via-gray-200 to-gray-300 flex items-center justify-center">
-              <div class="text-gray-800 text-sm">White Siding</div>
+            <!-- Carousel Navigation Arrows -->
+            <button class="carousel-arrow carousel-arrow-left" aria-label="Previous slide">‹</button>
+            <button class="carousel-arrow carousel-arrow-right" aria-label="Next slide">›</button>
+            <!-- Carousel Navigation Dots -->
+            <div class="carousel-dots">
+              <button class="carousel-dot active" data-slide="0" aria-label="Show review"></button>
+              <button class="carousel-dot" data-slide="1" aria-label="Show photo"></button>
             </div>
           </div>
         </div>
-        
-        <!-- Carousel Dots -->
-        <div class="flex justify-center gap-2">
-          <div class="w-2 h-2 rounded-full bg-white"></div>
-          <div class="w-2 h-2 rounded-full bg-gray-500"></div>
-          <div class="w-2 h-2 rounded-full bg-gray-500"></div>
+
+        <!-- Carousel 2 -->
+        <div class="testimonial-carousel">
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <!-- Slide 1: Review -->
+              <div class="carousel-slide active">
+                <div class="carousel-image-wrapper">
+                  <img src="/images/review2.webp" alt="Customer review" class="carousel-image" />
+                </div>
+              </div>
+              <!-- Slide 2: After Image -->
+              <div class="carousel-slide">
+                <div class="carousel-image-wrapper">
+                  <img src="/images/reviewphoto2.webp" alt="Home after siding installation" class="carousel-image" />
+                </div>
+              </div>
+            </div>
+            <!-- Carousel Navigation Arrows -->
+            <button class="carousel-arrow carousel-arrow-left" aria-label="Previous slide">‹</button>
+            <button class="carousel-arrow carousel-arrow-right" aria-label="Next slide">›</button>
+            <!-- Carousel Navigation Dots -->
+            <div class="carousel-dots">
+              <button class="carousel-dot active" data-slide="0" aria-label="Show review"></button>
+              <button class="carousel-dot" data-slide="1" aria-label="Show photo"></button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel 3 -->
+        <div class="testimonial-carousel">
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <!-- Slide 1: Review -->
+              <div class="carousel-slide active">
+                <div class="carousel-image-wrapper">
+                  <img src="/images/review3.webp" alt="Customer review" class="carousel-image" />
+                </div>
+              </div>
+              <!-- Slide 2: After Image -->
+              <div class="carousel-slide">
+                <div class="carousel-image-wrapper">
+                  <img src="/images/reviewphoto3.webp" alt="Home after siding installation" class="carousel-image" />
+                </div>
+              </div>
+            </div>
+            <!-- Carousel Navigation Arrows -->
+            <button class="carousel-arrow carousel-arrow-left" aria-label="Previous slide">‹</button>
+            <button class="carousel-arrow carousel-arrow-right" aria-label="Next slide">›</button>
+            <!-- Carousel Navigation Dots -->
+            <div class="carousel-dots">
+              <button class="carousel-dot active" data-slide="0" aria-label="Show review"></button>
+              <button class="carousel-dot" data-slide="1" aria-label="Show photo"></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const carousels = document.querySelectorAll('.testimonial-carousel');
+    
+    carousels.forEach(carousel => {
+      const container = carousel.querySelector('.carousel-container');
+      const slidesWrapper = carousel.querySelector('.carousel-slides');
+      const dots = carousel.querySelectorAll('.carousel-dot');
+      const slides = carousel.querySelectorAll('.carousel-slide');
+      const prevArrow = carousel.querySelector('.carousel-arrow-left');
+      const nextArrow = carousel.querySelector('.carousel-arrow-right');
+      let currentSlide = 0;
+      
+      function showSlide(index) {
+        // Update transform to slide
+        const translateX = -index * 100;
+        slidesWrapper.style.transform = `translateX(${translateX}%)`;
+        
+        // Remove active class from all slides and dots
+        slides.forEach(slide => slide.classList.remove('active'));
+        dots.forEach(d => d.classList.remove('active'));
+        
+        // Add active class to selected slide and dot
+        slides[index].classList.add('active');
+        dots[index].classList.add('active');
+        
+        currentSlide = index;
+      }
+      
+      function nextSlide() {
+        const nextIndex = (currentSlide + 1) % slides.length;
+        showSlide(nextIndex);
+      }
+      
+      function prevSlide() {
+        const prevIndex = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(prevIndex);
+      }
+      
+      // Arrow navigation
+      if (nextArrow) {
+        nextArrow.addEventListener('click', (e) => {
+          e.stopPropagation();
+          nextSlide();
+        });
+      }
+      
+      if (prevArrow) {
+        prevArrow.addEventListener('click', (e) => {
+          e.stopPropagation();
+          prevSlide();
+        });
+      }
+      
+      // Click on carousel container to cycle through slides
+      container.addEventListener('click', (e) => {
+        // Don't cycle if clicking on navigation elements
+        if (!e.target.closest('.carousel-dots') && 
+            !e.target.closest('.carousel-arrow')) {
+          nextSlide();
+        }
+      });
+      
+      // Dot navigation
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', (e) => {
+          e.stopPropagation();
+          showSlide(index);
+        });
+      });
+    });
+  });
+</script>
+
+<style>
+  .testimonials-section {
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .testimonial-carousel {
+    position: relative;
+  }
+
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #2a2a2a;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+
+  .carousel-container:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .carousel-slides {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .carousel-slide {
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+  }
+
+  .carousel-image-wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .carousel-review-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    background-color: #1d231c;
+  }
+
+  .review-content {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .review-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin: 0 0 20px 0;
+    font-style: italic;
+  }
+
+  .review-author {
+    font-size: 14px;
+    color: #65b357;
+    margin: 0;
+    font-weight: 600;
+  }
+
+  .carousel-dots {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    z-index: 10;
+  }
+
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.3s ease;
+  }
+
+  .carousel-dot:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+
+  .carousel-dot.active {
+    background-color: #ffffff;
+  }
+
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    transition: background-color 0.3s ease, opacity 0.3s ease;
+    opacity: 0.7;
+  }
+
+  .carousel-container:hover .carousel-arrow {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .carousel-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .carousel-arrow-left {
+    left: 10px;
+  }
+
+  .carousel-arrow-right {
+    right: 10px;
+  }
+
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .testimonials-section {
+      padding: 40px 0;
+    }
+
+    .review-text {
+      font-size: 14px;
+      padding: 0 10px;
+    }
+
+    .review-author {
+      font-size: 13px;
+    }
+
+    .carousel-review-wrapper {
+      padding: 20px 15px;
+    }
+
+    .carousel-arrow {
+      width: 35px;
+      height: 35px;
+      font-size: 24px;
+      opacity: 0.7;
+    }
+
+    .carousel-arrow-left {
+      left: 5px;
+    }
+
+    .carousel-arrow-right {
+      right: 5px;
+    }
+
+    .carousel-container:hover .carousel-arrow {
+      opacity: 0.7;
+    }
+  }
+</style>
 

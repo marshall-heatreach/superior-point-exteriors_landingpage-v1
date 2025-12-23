@@ -43,7 +43,7 @@
     background-color: #1d231c;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .guarantee-section {
       padding-bottom: 20px;
     }
@@ -54,52 +54,70 @@
     padding: 10px 5px;
     width: 100%;
     max-width: 1170px;
+    box-sizing: border-box;
+  }
+
+  @media screen and (min-width: 769px) {
+    .guarantee-container {
+      padding: 10px 20px;
+    }
   }
 
   .guarantee-header {
     margin: 60px auto 0;
     text-align: center;
+    padding: 0 20px;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .guarantee-header {
       margin-top: 10px;
-      padding: 0 10px;
+      padding: 0 20px;
     }
   }
 
   .guarantee-main-heading {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 32px;
     color: #ffffff;
     margin: 0;
     padding: 0;
     text-align: center;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .guarantee-main-heading {
-      font-size: 32px !important;
+      font-size: 28px;
       margin-bottom: 5px;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .guarantee-main-heading {
+      font-size: 32px;
     }
   }
 
   .guarantee-subheading {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 24px;
     color: #ffffff;
     margin: 0;
     padding: 10px 0 20px;
     text-align: center;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .guarantee-subheading {
-      font-size: 24px !important;
+      font-size: 20px;
       padding-top: 0;
       padding-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .guarantee-subheading {
+      font-size: 24px;
     }
   }
 
@@ -111,7 +129,6 @@
     border: 1px solid transparent;
     letter-spacing: 0;
     text-transform: uppercase;
-    font-size: 18px;
     font-weight: 700;
     margin: 0;
     text-align: center;
@@ -119,6 +136,21 @@
     height: auto;
     cursor: pointer;
     transition: background-color 0.3s ease;
+  }
+
+  @media screen and (max-width: 768px) {
+    .guarantee-button {
+      font-size: 16px;
+      padding: 14px 28px;
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .guarantee-button {
+      font-size: 18px;
+    }
   }
 
   .guarantee-button:hover {
@@ -133,44 +165,46 @@
     width: 100%;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (min-width: 769px) {
+    .guarantee-cards {
+      gap: 10px;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
     .guarantee-cards {
       padding-left: 10px;
       padding-right: 10px;
+      flex-direction: column;
+      gap: 20px;
     }
   }
 
   .guarantee-card {
     background-color: #ffffff;
-    padding: 10px 20px;
-    width: 33%;
+    padding: 20px;
     text-align: center;
     box-shadow: 0 0 2px 0 #707070;
   }
 
-  .guarantee-card:first-child {
-    margin: 0 0 0 0;
+  @media screen and (min-width: 769px) {
+    .guarantee-card {
+      width: calc(33.333% - 7px);
+      flex: 0 0 auto;
+    }
   }
 
-  .guarantee-card:nth-child(2) {
-    margin: 0;
-  }
-
-  .guarantee-card:last-child {
-    margin: 0 20px 0 0;
-  }
-
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .guarantee-card {
       width: 100%;
-      margin: 0 0 20px 0 !important;
+      margin: 0;
       padding: 20px;
     }
   }
 
   .guarantee-icon {
     font-family: 'Montserrat', sans-serif;
-    font-size: 48px;
     font-weight: 400;
     color: #65b357;
     margin: 0;
@@ -178,41 +212,59 @@
     text-align: center;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .guarantee-icon {
-      font-size: 48px !important;
+      font-size: 40px;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .guarantee-icon {
+      font-size: 48px;
     }
   }
 
   .guarantee-card-heading {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 25px;
     color: #000000;
     margin: 0;
     padding: 0;
     text-align: center;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .guarantee-card-heading {
-      font-size: 25px !important;
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .guarantee-card-heading {
+      font-size: 25px;
     }
   }
 
   .guarantee-card-text {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: 16px;
     color: #000000;
     margin: 0;
     padding: 10px 0;
     text-align: center;
+    line-height: 1.5;
   }
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 768px) {
     .guarantee-card-text {
-      font-size: 16px !important;
+      font-size: 15px;
+      padding: 8px 0;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    .guarantee-card-text {
+      font-size: 16px;
     }
   }
 </style>

@@ -1,60 +1,56 @@
 ---
 ---
 
-<!-- Proof Icons Section - Image Placeholder -->
-<section class="bg-sp-dark-gray proof-icons-section">
-  <div class="container mx-auto proof-icons-container">
-    <div class="proof-icons-row">
-      <!-- Image Placeholder 1 -->
-      <div class="proof-icon-col">
-        <div class="proof-icon-image">
-          <div class="w-full h-24 md:h-32 bg-gray-600 rounded flex items-center justify-center">
-            <p class="text-white text-xs">Image Placeholder</p>
-          </div>
-        </div>
+<!-- Trust Section - Responsive Images -->
+<section class="bg-sp-dark-gray trust-section">
+  <div class="container mx-auto trust-container">
+    <!-- Mobile: Single image -->
+    <div class="trust-image-wrapper trust-mobile">
+      <img src="/images/trust.webp" alt="Trust badge" class="trust-image" />
+    </div>
+    
+    <!-- Desktop: Three images in a row -->
+    <div class="trust-images-row trust-desktop">
+      <div class="trust-image-col">
+        <img src="/images/trust1.webp" alt="Trust badge 1" class="trust-image" />
       </div>
-      
-      <!-- Image Placeholder 2 -->
-      <div class="proof-icon-col">
-        <div class="proof-icon-image">
-          <div class="w-full h-24 md:h-32 bg-gray-600 rounded flex items-center justify-center">
-            <p class="text-white text-xs">Image Placeholder</p>
-          </div>
-        </div>
+      <div class="trust-image-col">
+        <img src="/images/trust2.webp" alt="Trust badge 2" class="trust-image" />
       </div>
-      
-      <!-- Image Placeholder 3 -->
-      <div class="proof-icon-col">
-        <div class="proof-icon-image">
-          <div class="w-full h-24 md:h-32 bg-gray-600 rounded flex items-center justify-center">
-            <p class="text-white text-xs">Image Placeholder</p>
-          </div>
-        </div>
-      </div>
-      
-      <!-- Image Placeholder 4 -->
-      <div class="proof-icon-col">
-        <div class="proof-icon-image">
-          <div class="w-full h-24 md:h-32 bg-gray-600 rounded flex items-center justify-center">
-            <p class="text-white text-xs">Image Placeholder</p>
-          </div>
-        </div>
+      <div class="trust-image-col">
+        <img src="/images/trust3.webp" alt="Trust badge 3" class="trust-image" />
       </div>
     </div>
   </div>
 </section>
 
 <style>
-  .proof-icons-section {
+  .trust-section {
     padding: 0;
     margin: 0;
   }
 
-  .proof-icons-container {
+  .trust-container {
     padding: 0;
   }
 
-  .proof-icons-row {
+  .trust-image-wrapper {
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  .trust-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Desktop: Three images in a row */
+  .trust-images-row {
     margin: 0 auto;
     padding: 0 5px;
     display: flex;
@@ -63,28 +59,45 @@
     width: 55%;
   }
 
-  .proof-icon-col {
+  .trust-image-col {
     padding: 0 5px;
-    width: 25%;
-    flex: 0 0 25%;
+    width: 33.333%;
+    flex: 0 0 33.333%;
   }
 
-  .proof-icon-image {
-    margin: 0;
-    width: auto;
-    height: auto;
+  .trust-desktop .trust-image {
+    max-height: 120px;
+    min-height: 80px;
+    object-fit: contain;
   }
 
-  .proof-icon-image img {
-    width: 100%;
-    height: auto;
-    display: block;
+  .trust-desktop {
+    display: none;
+  }
+
+  .trust-mobile {
+    display: flex;
+  }
+
+  /* Desktop styles */
+  @media (min-width: 481px) {
+    .trust-mobile {
+      display: none;
+    }
+
+    .trust-desktop {
+      display: flex;
+    }
+
+    .trust-image-wrapper {
+      max-width: 55%;
+    }
   }
 
   /* Mobile styles */
   @media (max-width: 480px) {
-    .proof-icons-row {
-      width: 100%;
+    .trust-image-wrapper {
+      max-width: 100%;
       padding: 20px;
     }
   }
