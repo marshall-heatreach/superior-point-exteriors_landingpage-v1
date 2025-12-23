@@ -20,7 +20,12 @@ const { title = "Superior Point Exteriors - Free Winter Siding Health Check" } =
     <link rel="preconnect" href="https://embed.growform.co" />
     <link rel="dns-prefetch" href="https://embed.growform.co" />
     <link rel="preconnect" href="https://images.leadconnectorhq.com" />
-    <link rel="dns-prefetch" href="https://assets.cdn.filesafe.space" />
+    
+    <!-- Preload LCP hero image for faster Largest Contentful Paint -->
+    <!-- Browser will only preload the image matching the viewport via media queries -->
+    <link rel="preload" href="https://images.leadconnectorhq.com/image/f_webp/q_80/r_768/u_https://assets.cdn.filesafe.space/gRcxdesqVI2uOCueKGNZ/media/693db9cb97c0232454e0748b.webp" as="image" fetchpriority="high" media="(max-width: 480px)" />
+    <link rel="preload" href="https://images.leadconnectorhq.com/image/f_webp/q_80/r_900/u_https://assets.cdn.filesafe.space/gRcxdesqVI2uOCueKGNZ/media/693db9cb97c0232454e0748b.webp" as="image" fetchpriority="high" media="(min-width: 481px) and (max-width: 1024px)" />
+    <link rel="preload" href="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/gRcxdesqVI2uOCueKGNZ/media/693db9cb97c0232454e0748b.webp" as="image" fetchpriority="high" media="(min-width: 1025px)" />
     
     <!-- Preload Growform script for fastest form loading (highest priority) -->
     <link rel="preload" href="https://embed.growform.co/client/69457054e5f4f67ea247dd87" as="script" fetchpriority="high" />
