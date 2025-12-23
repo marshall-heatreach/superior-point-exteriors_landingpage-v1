@@ -1,0 +1,32 @@
+---
+interface Props {
+  title?: string;
+}
+
+const { title = "Superior Point Exteriors - Free Winter Siding Health Check" } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Free Winter Siding Health Check - Only 12 Available This Month! Superior Point Exteriors offers professional exterior services in the Twin Cities." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  html {
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+</style>
+

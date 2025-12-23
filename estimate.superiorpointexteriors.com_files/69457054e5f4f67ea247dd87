@@ -1,0 +1,264 @@
+/* growform client2
+   bundle.url: https://assets.growform.co/cee2d99-mhw6hzfz/form.bundle.js
+   resolve.source: kv
+   resolve.at: 2025-12-22T22:53:25.820Z
+   form.source: kv
+   cache.age_ms: 0
+   kv.value_present: true
+   fallback_used: false
+*/
+;(function () {
+  var EMBED_TYPE = "iFrame";
+  var FORM_ID = "69457054e5f4f67ea247dd87";
+  var FORM_BUNDLE_URL = "https://assets.growform.co/cee2d99-mhw6hzfz/form.bundle.js"; // injected by worker (KV/memory/fallback)
+  var FORM_DATA = {"data":{"form":{"_id":"69457054e5f4f67ea247dd87","options":{"numberOfSteps":5,"dateFormat":"DD/MM/YYYY","progressBar":{"enable":true,"position":"formTop","line_enableStripes":"Yes","line_animateStripes":"Yes","line_height":10},"continueButton":{"continueText":"NEXT","submitText":"GET 'HEALTH CHECK'","backText":"Back"},"customStyles":{"width":{"unit":"px","value":580},"parentContainerMinHeight":{"value":0,"unit":"px"},"parentBackgroundImage":{"imageInitialHeight":1362,"imageInitialWidth":2066,"imageHeight":1362,"imageWidth":2066,"imageUrl":"https://res.cloudinary.com/dqnjggegp/image/upload/v1597337140/uploads/qmsfk98ank3wfp1ehvyg.jpg"},"headerMarginTop":40,"parentBackgroundColor":"#ffffff","innerFormBackgroundColor":"#ffffff","innerFormBackgroundTransparency":"","primaryColor":"#43b74a","bodyTextColor":"#343434","parentContainerBackgroundType":"color","innerFormBackgroundType":"none","buttonBorderColor":"#ff7500","buttonColorSelected":"#ffa659","buttonBorderColorSelected":"#ff7500","footerMarginBottom":70,"errorColor":"#ff4e4e","buttonColor":"#ff7500","buttonTextColor":"#ffffff","inputLabelColor":"#a3a3a3","inputTextColor":"#000000","defaultFont":"Montserrat","sq_buttonFont":"Poppins","sq_buttonFontSize":15,"showShadows":"Yes","sq_buttonTextColor":"#343434","sq_buttonColor":"#FFFFFF","sq_buttonColorSelected":"#FFFFFF","sq_buttonBorderColor":"#DADADA","sq_buttonBorderColorSelected":"primary","sq_buttonBannerColor":"#ffffff","rt_buttonFont":"Montserrat","rt_buttonFontSize":16,"rt_buttonColor":"#FFFFFF","rt_buttonColorSelected":"#FFFFFF","rt_buttonTextColor":"#343434","rt_buttonBorderColor":"#DADADA","rt_buttonBorderColorSelected":"primary","inputLabelFont":"Montserrat","inputFontSize":16,"continueSubmitButtonFontSize":15,"fullModeBackgroundColor":"#E7F3FA","canvasSetup":"minimal","continueSubmitButtonFont":"Montserrat"},"localization":{"dateFormat":"MM/DD/YYYY"},"exportTransparentBackground":false,"customScript":"","customRedirectUrls":[{"url":"https://estimate.superiorpointexteriors.com/book","conditionalLogic":{"ruleBlocks":[{"sortOrder":0,"rules":[{"observedField":"buttons_109446974978914","operator":"selected_option","criteria":"5be94772672205ea06fa1c3c"}]}]}}],"logo":null,"actionOnSubmit":"redirect","sendCustomRedirectQueryParams":false,"analyticsSettings":{"google_analytics":{"trackingId":"G-PLRE8N2MF2"},"facebook":{"pixelId":"3128220017357270"}},"captureSystemDetails":false},"fields":{"Decorative Header_52363373085874":{"type":"Decorative Header","value":"Thanks for your enquiry!","width":12,"step":"complete","sortOrder":1,"fieldStyle":{"fontSize":{"value":20,"unit":"px"},"fontWeight":"Bold"},"margins":{"marginTop":20},"stepId":"complete"},"Decorative Header_797442086161467":{"type":"Decorative Header","value":"Do you Own or Rent your home?","width":12,"step":2,"sortOrder":1,"fieldStyle":{"fontSize":{"value":20,"unit":"px"},"fontWeight":"Bold"},"stepId":"acd45227cac332d443c4e1db","margins":{"marginBottom":0}},"Decorative Header_576559560634956":{"type":"Decorative Header","value":"What brings you here today?","width":12,"step":5,"sortOrder":1,"fieldStyle":{"fontSize":{"value":20,"unit":"px"},"fontWeight":"Bold"},"stepId":"ff4727c9498ef9c0a6c989d9","margins":{"marginBottom":0}},"Decorative_Paragraph_194067845817258":{"type":"Decorative Paragraph","value":"Thanks for getting in touch. We'll be in contact soon.","width":12,"step":"complete","sortOrder":2,"margins":{"marginBottom":60},"stepId":"complete","conditionalLogic":{"action":"show","ruleBlocks":[{"sortOrder":0,"rules":[{"observedField":"buttons_109446974978914","operator":"selected_option","criteria":"5be94772672205ea06fa1c3c"}]}]},"fieldStyle":{"fontSize":{"value":17,"unit":"px"}}},"buttons_109446974978914":{"type":"Buttons","validationRules":{"required":true},"label":"Property details","width":12,"multiple":false,"buttonStyle":{"rt_buttonsPerRow":"2","rt_buttonsPerRowMobile":1,"buttonsType":"Rectangle","spacing":20,"showControls":"Yes","rt_compactLayoutOnMobile":"Yes"},"options":[{"text":"Own","id":"5be94772672205ea06fa1c3c","image":"https://res.cloudinary.com/dqnjggegp/image/upload/v1766159287/uploads/xxgswatpyesgwvxtdjtp.svg"},{"text":"Rent","id":"cd688d984891cf9918f17913","image":"https://res.cloudinary.com/dqnjggegp/image/upload/v1766159291/uploads/pinsd0smvt6anf1e3phi.svg"}],"stepId":"acd45227cac332d443c4e1db","sortOrder":2,"hideLabel":true,"imageStyles":{"rt_width":120}},"buttons_749804386523874":{"type":"Buttons","validationRules":{"required":false},"label":"Primary Reason","width":12,"multiple":false,"buttonStyle":{"rt_buttonsPerRow":"2","rt_buttonsPerRowMobile":1,"buttonsType":"Rectangle","spacing":20,"showControls":"Yes","rt_compactLayoutOnMobile":"No","sq_buttonsPerRow":"2"},"options":[{"text":"Damage & Drafts","id":"433fe03df7727e0adb44369d","image":"https://res.cloudinary.com/dqnjggegp/image/upload/v1766160554/uploads/yg9rljpka8zhfewttjdx.svg"},{"text":"Old Siding (10+ yrs)","id":"92bbfa4469745ea3e6385717","image":"https://res.cloudinary.com/dqnjggegp/image/upload/v1766160561/uploads/v2pq21ehto0pxmyvv2dy.svg"}],"stepId":"ff4727c9498ef9c0a6c989d9","sortOrder":2,"hideLabel":true,"imageStyles":{"size":"66%","sq_imageOnlyMode":"No","rt_width":77},"margins":{"marginLeft":0}},"decorative_header_641593593469054":{"type":"Decorative Header","value":"If needed, when would you want repairs?","width":12,"step":5,"sortOrder":1,"fieldStyle":{"fontSize":{"value":20,"unit":"px"},"fontWeight":"Bold"},"stepId":"f6a4eb8fe2342d5a7a58900f","margins":{"marginBottom":0}},"buttons_897930403318586":{"type":"Buttons","validationRules":{"required":false},"label":"Project Timeline","width":12,"multiple":false,"buttonStyle":{"rt_buttonsPerRow":"1","rt_buttonsPerRowMobile":1,"buttonsType":"Rectangle","spacing":20,"showControls":"Yes","rt_compactLayoutOnMobile":"No"},"options":[{"text":"ASAP","id":"433fe03df7727e0adb44369d"},{"text":"3-6 Months","id":"cdd65e57e205bd13b166fb8a"},{"text":"6+ Months","image":null,"id":"769fa25036e1215838ae6d5d"}],"stepId":"f6a4eb8fe2342d5a7a58900f","sortOrder":2,"hideLabel":true},"decorative_header_593329083684752":{"type":"Decorative Header","value":"<p><strong>What's the buildings address?</strong></p>","width":12,"v":2,"sortOrder":1,"stepId":"3657934b0aacb29f15583c4a"},"address_395375882956335":{"type":"Address","label":"What is your address?","width":12,"stepId":"3657934b0aacb29f15583c4a","sortOrder":2},"decorative_header_587653705383347":{"type":"Decorative Header","value":"<p><strong>Where can we contact you?</strong></p>","width":12,"v":2,"sortOrder":1,"stepId":"cc838ee7f3f34669fcbd22b8"},"name_35352355976669":{"type":"Name","label":"What is your name?","width":12,"hideLabel":true,"options":{"Firstname":{"value":null,"errorText":null,"validationRules":{"required":true}},"Lastname":{"value":null,"errorText":null,"validationRules":{"required":true}},"Prefix":{"value":null,"errorText":null}},"stepId":"cc838ee7f3f34669fcbd22b8","sortOrder":2,"hidePrefix":true},"phone_794491697562265":{"type":"Phone","label":"What is your phone number?","width":12,"stepId":"cc838ee7f3f34669fcbd22b8","sortOrder":3},"email_790926444256303":{"type":"Email","label":"What is your email address?","width":12,"stepId":"cc838ee7f3f34669fcbd22b8","sortOrder":4},"decorative_text_782513173493383":{"type":"Decorative Text","value":"<p>Due to high-volume of requests, this offer is currently available only for homeowners looking for potential siding services. Thanks for your understanding.</p>","fieldStyle":{"fontSize":{"value":17,"unit":"px"}},"width":12,"v":2,"stepId":"complete","sortOrder":3,"conditionalLogic":{"action":"show","ruleBlocks":[{"sortOrder":0,"rules":[{"observedField":"buttons_109446974978914","operator":"selected_option","criteria":"cd688d984891cf9918f17913"}]}]}},"zipcode_311443834625828":{"type":"Zipcode","label":"What is your zip code?","zipcodeFieldFormat":"zipcode_usa","width":12,"stepId":"3657934b0aacb29f15583c4a","sortOrder":3}},"ownedByUser":"6941a07d780268bbe51152ad","formName":"Winter Siding 'Health Check' Survey (Simplified)","personalisation":{"form_related_to":"(None - start with a blank slate)"},"lastEdited":"2025-12-22T17:04:10.695Z","created":"2025-12-19T15:33:40.033Z","steps":[{"id":"acd45227cac332d443c4e1db","name":"Property Details","sortOrder":1},{"id":"ff4727c9498ef9c0a6c989d9","name":"Primary Reason","sortOrder":2},{"id":"f6a4eb8fe2342d5a7a58900f","name":"Project Timeline","sortOrder":3,"copyOf":"ff4727c9498ef9c0a6c989d9"},{"id":"3657934b0aacb29f15583c4a","name":"Address","sortOrder":4},{"id":"cc838ee7f3f34669fcbd22b8","name":"Contact Info","sortOrder":5,"conditionalLogic":null}],"screenshotUrl":"https://res.cloudinary.com/dqnjggegp/image/upload/v1766165711/growform-production/form-screenshots/69457054e5f4f67ea247dd87.png","leadsCount":6,"isActive":true,"reportedSpam":false,"spamOcr":"Do you Own or Rent your home?\nOwn\nRent\nRENT\nPowered by Growform Do you Own or Rent your home ? Own Rent RENT Powered by Growform","__v":0},"accountIsActive":true,"accountIsFreeTrial":true}};
+
+  // ---- Utils ----
+  function safeJSONStringify(obj) {
+    return JSON.stringify(obj)
+      .replace(/<\/(script|style)/gi, '<\\/$1')
+      .replace(/<!--/g, '<\\!--')
+      .replace(/-->/g, '--\\>')
+      .replace(/\u2028/g, '\\u2028')
+      .replace(/\u2029/g, '\\u2029');
+  }
+
+  function preloadScript(href) {
+    try {
+      if (!href) return;
+      if (document.querySelector('link[rel="preload"][href="' + href + '"]')) return;
+      var l = document.createElement("link");
+      l.rel = "preload";
+      l.as = "script";
+      l.href = href;
+      l.crossOrigin = ""; // allow cache reuse in iframe
+      document.head.appendChild(l);
+    } catch (_) {}
+  }
+
+  function parseQuery() {
+    var out = {};
+    try {
+      if (!window.location.search) return out;
+      var usp = new URLSearchParams(window.location.search);
+      usp.forEach(function (v, k) { out[k] = v; });
+    } catch (_) {}
+    return out;
+  }
+
+  function buildIframeHTML(opts) {
+    var html =
+'<!doctype html>\n' +
+'<html lang="" style="font-size:14px; font-family:\'Muli\', sans-serif;">\n' +
+'<head>\n' +
+'  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />\n' +
+'  <meta name="viewport" content="width=device-width, initial-scale=1">\n' +
+'  <link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">\n' +
+'</head>\n' +
+'<body style="background:none; margin:0; overflow-x:clip; overflow-y:auto;">\n' +
+'  <noscript>You need to enable JavaScript to run this app.</noscript>\n' +
+'  <div id="growform_5ap8d5a8na90d" style="width:100%; overflow-x:hidden;"></div>\n' +
+'  <script type="text/javascript" src="' + opts.bundleUrl + '"></' + 'script>\n' +
+'  <script type="text/javascript">\n' +
+'    (function(){\n' +
+'      try {\n' +
+'        if (window.Growform && typeof window.Growform.init === "function") {\n' +
+'          window.Growform.init({\n' +
+'            formId: ' + JSON.stringify(opts.formId) + ',\n' +
+'            embedMethod: ' + JSON.stringify(opts.embedMethod) + ',\n' +
+'            embedId: ' + JSON.stringify(opts.embedId) + ',\n' +
+'            queryParams: ' + JSON.stringify(opts.query || {}) + ',\n' +
+'            formData: ' + opts.formData + '\n' +
+'          });\n' +
+'        }\n' +
+'      } catch(e) { /* swallow */ }\n' +
+'    })();\n' +
+'  </' + 'script>\n' +
+'</body>\n' +
+'</html>';
+    return html;
+  }
+
+  function embedGrowform() {
+    var growformEmbedId = "embed-" + Math.floor(Math.random() * 100000).toString();
+    var iFrameHeight = (EMBED_TYPE === "modal") ? "100%" : "350px";
+
+    preloadScript(FORM_BUNDLE_URL);
+
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("width", "100%");
+    iframe.setAttribute("height", iFrameHeight);
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("data-cookieconsent", "ignore");
+    iframe.setAttribute("class", "growform_form growform_form_" + growformEmbedId);
+    iframe.setAttribute("id", "growform_form");
+    iframe.setAttribute("allowTransparency", "true");
+    if (EMBED_TYPE !== "modal") {
+      iframe.setAttribute("scrolling", "no");
+    }
+
+    var isTrustedFormEnabled = false;
+    try {
+      if (FORM_DATA && FORM_DATA.data && FORM_DATA.data.form && 
+          FORM_DATA.data.form.options && FORM_DATA.data.form.options.analyticsSettings &&
+          FORM_DATA.data.form.options.analyticsSettings.trustedForm &&
+          FORM_DATA.data.form.options.analyticsSettings.trustedForm.enabled === true) {
+        isTrustedFormEnabled = true;
+      }
+    } catch (_) {}
+
+    if (isTrustedFormEnabled) {
+      var baseUrl = "https://embed.growform.co/go/" + FORM_ID + "/embedMethod/" + EMBED_TYPE + "/";
+      var iframeUrl = baseUrl + growformEmbedId;
+      if (window.location.search) {
+        iframeUrl = iframeUrl + window.location.search;
+      }
+      iframe.setAttribute("src", iframeUrl);
+    } else {
+      // Use srcdoc method for non-TrustedForm forms
+      var html = buildIframeHTML({
+        formId: FORM_ID,
+        embedMethod: EMBED_TYPE,
+        embedId: growformEmbedId,
+        query: parseQuery(),
+        bundleUrl: FORM_BUNDLE_URL,
+        formData: safeJSONStringify(FORM_DATA)
+      });
+
+      try {
+        if ("srcdoc" in iframe) {
+          iframe.srcdoc = html;
+        } else {
+          var blob = new Blob([html], { type: "text/html" });
+          iframe.src = URL.createObjectURL(blob);
+        }
+      } catch (_) {
+        var blob2 = new Blob([html], { type: "text/html" });
+        iframe.src = URL.createObjectURL(blob2);
+      }
+    }
+
+    var currentScript = document.currentScript || (function(){
+      var scripts = document.getElementsByTagName('script');
+      return scripts[scripts.length - 1];
+    })();
+    if (currentScript && currentScript.parentNode) {
+      currentScript.parentNode.insertBefore(iframe, currentScript.nextSibling);
+    } else {
+      // fallback if we can't find the script
+      document.body.appendChild(iframe);
+    }
+
+    // ------- Public API on parent -------
+    window.growform = window.growform || {};
+    if (typeof window.growform.setHiddenField !== "function") {
+      window.growform.setHiddenField = function(fieldName, value) {
+        var iframes = document.getElementsByClassName("growform_form");
+        for (var i = 0; i < iframes.length; i++) {
+          if (iframes[i].contentWindow) {
+            iframes[i].contentWindow.postMessage({
+              action: "growform_set_hidden_field",
+              fieldName: fieldName,
+              value: value
+            }, "*");
+          }
+        }
+      };
+    }
+
+    // ------- Message plumbing (unchanged behaviours) -------
+    function growform_receiveMessage(event) {
+      var origin = event && event.origin ? event.origin : null;
+      var hostOrigin = window.location.origin;
+
+      if (
+        origin !== null &&
+        origin !== 'null' &&
+        origin !== hostOrigin &&
+        origin !== 'https://embed.growform.co'
+      ) {
+        console.warn('Blocked message from unexpected origin:', origin);
+        return;
+      }
+
+      if (!event || !event.data || !event.data.action) return;
+      if (event.data.growform_embed_id !== growformEmbedId) return;
+
+      if (event.data.action === "growform_resize_height") {
+        var h = parseInt(event.data.height, 10);
+        if (!isNaN(h)) {
+          var targetClass = "growform_form_" + growformEmbedId;
+          h = Math.round(h) + 16;
+          var el = document.getElementsByClassName(targetClass)[0];
+          if (el) el.style.height = h + "px";
+        }
+      }
+
+      if (event.data.action === "growform_submit_form") {
+        var customScript = event.data.customScript;
+        var elementId = "growform_CustomScriptPageDiv_" + growformEmbedId;
+        if (!document.getElementById(elementId)) {
+          var d = document.createElement("div");
+          d.id = elementId;
+          document.body.appendChild(d);
+          d.innerHTML = customScript;
+          var scripts = d.getElementsByTagName("script");
+          for (var i = 0; i < scripts.length; i++) {
+            try { eval(scripts[i].innerText); } catch (_) {}
+          }
+        }
+      }
+
+      if (event.data.action === "growform_add_parent_gtm_container") {
+        var containerId = event.data.containerId;
+        (function (w, d, s, l, i) {
+          w[l] = w[l] || [];
+          w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+          var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s),
+              dl = l != "dataLayer" ? "&l=" + l : "";
+          j.async = true;
+          j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+          f.parentNode.insertBefore(j, f);
+        })(window, document, "script", "dataLayer", containerId);
+
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "growformAnalyticsSettings",
+          growformAnalyticsSettings: event.data.analyticsSettings,
+          growformEmbedId: growformEmbedId
+        });
+      }
+
+      if (event.data.action === "growform_scroll_to_top") {
+        var targetClass2 = "growform_form_" + growformEmbedId;
+        var target = document.getElementsByClassName(targetClass2)[0];
+        if (target && target.getBoundingClientRect) {
+          var rect = target.getBoundingClientRect();
+          var relY = rect.top;
+          var absY = relY + (window.scrollY || window.pageYOffset || 0);
+          var winH = window.innerHeight || document.documentElement.clientHeight;
+          if (relY < 0 || relY > winH) {
+            var offset = event.data.offset ? event.data.offset : 0;
+            var y = absY + offset;
+            setTimeout(function(){ window.scrollTo({ top: y, behavior: "smooth" }); }, 100);
+          }
+        }
+      }
+
+      if (event.data.action === "growform_form_loaded") {
+        try {
+          var ev = document.createEvent("Event");
+          ev.initEvent("growform_loaded", true, true);
+          window.dispatchEvent(ev);
+        } catch (_) {
+          try { window.dispatchEvent(new Event("growform_loaded")); } catch (_) {}
+        }
+      }
+    }
+
+    window.addEventListener("message", growform_receiveMessage, false);
+  }
+
+  embedGrowform();
+})();
