@@ -17,10 +17,12 @@ const { title = "Superior Point Exteriors - Free Winter Siding Health Check" } =
     <!-- Preconnect to external domains for faster resource loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://embed.growform.co" />
+    <link rel="preconnect" href="https://embed.growform.co" crossorigin />
     <link rel="dns-prefetch" href="https://embed.growform.co" />
     <link rel="preconnect" href="https://images.leadconnectorhq.com" />
-    <!-- Note: Avoid preloading 3rd-party scripts with high priority; it can steal bandwidth from LCP resources -->
+    
+    <!-- Form is the primary CTA: prioritize Growform script download as early as possible -->
+    <link rel="preload" href="https://embed.growform.co/client/69457054e5f4f67ea247dd87" as="script" fetchpriority="high" crossorigin />
     
     <!-- Optimized font loading with font-display: swap -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
