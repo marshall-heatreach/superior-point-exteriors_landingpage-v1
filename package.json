@@ -12,10 +12,17 @@
   "dependencies": {
     "@astrojs/react": "^3.3.1",
     "@astrojs/tailwind": "^5.1.0",
+    "@hookform/resolvers": "^5.2.2",
     "astro": "^4.5.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.26",
+    "lucide-react": "^0.562.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sharp": "^0.34.5"
+    "react-hook-form": "^7.69.0",
+    "sharp": "^0.34.5",
+    "tailwind-merge": "^3.4.0",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

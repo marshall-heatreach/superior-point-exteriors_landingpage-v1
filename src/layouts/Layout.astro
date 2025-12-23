@@ -17,22 +17,14 @@ const { title = "Superior Point Exteriors - Free Winter Siding Health Check" } =
     <!-- Preconnect to external domains for faster resource loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://embed.growform.co" />
-    <link rel="dns-prefetch" href="https://embed.growform.co" />
     <link rel="preconnect" href="https://images.leadconnectorhq.com" />
     <link rel="dns-prefetch" href="https://assets.cdn.filesafe.space" />
-    
-    <!-- Preload Growform script for fastest form loading (highest priority) -->
-    <link rel="preload" href="https://embed.growform.co/client/69457054e5f4f67ea247dd87" as="script" fetchpriority="high" />
     
     <!-- Optimized font loading with font-display: swap -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
     
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
-    
-    <!-- Formsort Embed Script -->
-    <script>(function(f,o,r,m){g=f[m]=function(a,b){g.q&&g.q.push([a,b])};g.q=[];s=o.createElement(r);s.async=1;s.src='https://script.formsort.com/embed/v2.js';o.head.appendChild(s);g.load=function(p){g('load',p);};g.close=function(){};;})(window,document,'script','_formsort')</script>
   </head>
   <body>
     <slot />
